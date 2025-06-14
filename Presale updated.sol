@@ -217,7 +217,7 @@ contract RICPresale is Ownable(msg.sender), ReentrancyGuard {
     uint256 public totalBonus;
     uint256 public totalEarnedUSD;
     uint256 public ricPriceUSD = 50 * 10**18; // $100 per RIC    Token price in USD (18 decimals)
-    uint256 public tokensForDev = 200 * 10**18; // tokens to developer
+    uint256 public tokensForDev = 500 * 10**18; // tokens to developer
     uint256 public stage = 1;
     bool public presaleFinalized;
 
