@@ -342,6 +342,11 @@ contract RICPresale is Ownable(msg.sender), ReentrancyGuard {
         dev1 = _newDev;
     }
 
+    function updateContribution(uint256 _min, uint256 _max) external onlyOwner{
+        minContribution = _min;
+        maxContribution = _max;
+    }
+
     //change the address of developer 2
     function updateDev2(address _newDev) external {
         require(msg.sender == dev2, "Not allowed");
